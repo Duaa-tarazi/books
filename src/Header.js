@@ -15,7 +15,7 @@ class Header extends React.Component {
       isAuthenticated,
     } = this.props.auth0;
     return(
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand>My Favorite Books</Navbar.Brand>
         <Link to="/">Home</Link>
         <Link to="/profile">Profile</Link>

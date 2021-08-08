@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import Slide from './Slide';
 import IsLoadingAndError from './IsLoadingAndError';
 import Footer from './Footer';
 import {
@@ -23,6 +24,8 @@ class App extends React.Component {
         <Router>
           <IsLoadingAndError>
             <Header />
+            <Slide/>
+
             <Switch>
               <Route exact path="/">
                {
