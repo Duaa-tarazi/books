@@ -13,10 +13,29 @@ import { withAuth0 } from "@auth0/auth0-react";
 import Login from  "./Login";
 import BestBooks from "./BestBooks";
 import Profile from './Profile';
+import axios from 'axios';
 
 
 class App extends React.Component {
+state={
+  title: '',
+  description: '',
+  status: '',
+  email: '',
 
+}
+  gitbooksData=()=>
+{
+  axios.get('/book')
+  .then((response)=>{
+   const data=response.data;
+  this.setState
+  })
+  .catch(()=>{
+    console.log('data has been recived');
+
+  })
+}
   render() {
     console.log('app', this.props);
     return(
